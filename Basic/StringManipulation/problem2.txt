@@ -1,0 +1,12 @@
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+int main() {
+   string str1 = "ABAABACCABA";
+
+   cout << "Initial string: " << str1 << endl;
+   str1.erase(remove(str1.begin(),str1.end(), 'A'), str1.end());
+   cout << "Final string: " <<str1;
+return 0;
+}

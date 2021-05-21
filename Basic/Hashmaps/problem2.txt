@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+void show(const char *msg, unordered_map<string, int> mp);
+
+int main() {
+  unordered_map<string, int> m;
+
+  m.insert(pair<string, int>("A", 100));
+  m.insert(pair<string, int>("G", 300));
+  m.insert(pair<string, int>("B", 200));
+
+
+ unordered_map<string, int> m2;
+
+  m2.insert(pair<string, int>("G", 300));
+  m2.insert(pair<string, int>("A", 100));
+  m2.insert(pair<string, int>("B", 200));
+
+  if(m == m2) cout << "1 \n\n";
+  else (cout<<"0");
+
+  return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+int main() {
+ 
+ string s1 = "ATATGTATG";
+ string s2 = "ATATATATG";
+ 
+ double common = 0, maxlen = 0;
+ maxlen = max(s1.length(),s2.length());
+ for(int i=0; i<maxlen; i++){
+     if (s1[i] == s2[i]){
+         common++;
+     }
+ }
+ 
+ cout<<"similarity index is  "<< common/maxlen*100;
+ 
+ return 0;
+}
+
